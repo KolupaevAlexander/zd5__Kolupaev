@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    tools:context=".AddTeacherActivity"
+    android:background="@color/background">
+    <EditText
+        android:id="@+id/teacherNameEd"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Введите имя учителя"
+        android:textColorHint="#AD121010"
+        android:textColor="@color/black"
+        android:layout_marginBottom="16sp"/>
+    <Spinner
+        android:id="@+id/specialitiesSpinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16sp"/>
+    <EditText
+        android:id="@+id/hoursPerYearTeacher"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColorHint="#AD121010"
+        android:textColor="@color/black"
+        android:hint="Введите количество часов в год"
+        android:layout_marginBottom="16sp"/>
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/addTeacherBt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/buttons"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:text="Добавить учителя"/>
+
+</LinearLayout>

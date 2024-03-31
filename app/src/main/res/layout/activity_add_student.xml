@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:orientation="vertical"
+    android:background="@color/background">
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <EditText
+            android:id="@+id/studentNameEd"
+            android:layout_width="match_parent"
+            android:textColorHint="#AD121010"
+            android:layout_height="wrap_content"
+            android:hint="Имя студента"/>
+
+        <DatePicker
+            android:id="@+id/studentBirthdayD"
+            android:layout_width="wrap_content"
+            android:layout_height="400dp"
+            android:layout_below="@id/studentNameEd"
+            android:background="@color/white"/>
+
+        <Spinner
+            android:id="@+id/groupSpinner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/studentBirthdayD"
+            android:layout_marginTop="10dp" />
+
+        <EditText
+            android:id="@+id/courseEd"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/groupSpinner"
+            android:textColorHint="#AD121010"
+            android:textColor="@color/black"
+            android:layout_marginTop="10dp"
+            android:hint="Курс"/>
+
+        <CheckBox
+            android:id="@+id/isBudgetCheckbox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/courseEd"
+            android:layout_marginTop="2dp"
+            android:text="Бюджет"/>
+
+        <EditText
+            android:id="@+id/photoEd"
+            android:layout_width="match_parent"
+            android:layout_height="40sp"
+            android:layout_below="@id/isBudgetCheckbox"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/black"
+            android:textColorHint="#AD121010"
+            android:hint="Фото URL"/>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/addStudentButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/buttons"
+            android:layout_gravity="center_horizontal"
+            android:text="Добавить"/>
+    </LinearLayout>
+
+</ScrollView>
+
+</LinearLayout>

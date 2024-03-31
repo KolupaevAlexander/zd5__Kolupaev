@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:padding="16dp"
+    android:orientation="vertical"
+    tools:context=".ChangeStudentActivity"
+    android:background="@color/background">
+
+    <EditText
+        android:id="@+id/changeStudentNameEd"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColorHint="#AD121010"
+        android:hint="Имя студента"/>
+
+    <DatePicker
+        android:id="@+id/changeStudentBirthdayD"
+        android:layout_width="wrap_content"
+        android:layout_height="350sp"
+        android:layout_below="@id/studentNameEd"
+        android:background="@color/white"/>
+
+    <Spinner
+        android:id="@+id/changeSpecialitySpinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/studentBirthdayD"
+        android:layout_marginTop="16dp" />
+
+    <EditText
+        android:id="@+id/changeCourseEd"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/groupSpinner"
+        android:layout_marginTop="16dp"
+        android:textColor="@color/black"
+        android:textColorHint="#AD121010"
+        android:hint="Курс"/>
+
+    <CheckBox
+        android:id="@+id/changeIsBudgetCheckbox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/courseEd"
+        android:layout_marginTop="16dp"
+        android:text="Бюджет"/>
+
+    <EditText
+        android:id="@+id/ChangephotoEd"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColorHint="#AD121010"
+        android:layout_below="@id/isBudgetCheckbox"
+        android:layout_marginTop="16dp"
+        android:hint="Фото URL"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/changeStudentButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/buttons"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:text="Изменить"/>
+</LinearLayout>

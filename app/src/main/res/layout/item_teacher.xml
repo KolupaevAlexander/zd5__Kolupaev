@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/teacherItem"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@drawable/background_item"
+    android:padding="16dp">
+    <TextView
+        android:id="@+id/teacherNameTextView"
+        android:layout_width="wrap_content"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:text="Имя"
+        android:layout_marginTop="5dp"
+        android:layout_height="wrap_content"/>
+    <TextView
+        android:id="@+id/teacherSalaryTextView"
+        android:layout_width="wrap_content"
+        android:textColor="@color/black"
+        android:text="Зарплата"
+        android:layout_marginTop="5dp"
+        android:layout_height="wrap_content"/>
+    <TextView
+        android:id="@+id/hoursPerYearItemTextView"
+        android:layout_width="wrap_content"
+        android:textColor="@color/black"
+        android:text="Количество часов"
+        android:layout_marginTop="5dp"
+        android:layout_height="wrap_content"/>
+    <TextView
+        android:id="@+id/specialityTeahcerTextView"
+        android:layout_width="wrap_content"
+        android:textColor="@color/black"
+        android:text="Специальность"
+        android:layout_marginTop="5dp"
+        android:layout_height="wrap_content"/>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="5dp">
+        <TextView
+            android:id="@+id/textViewLogin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:text="Логин" />
+
+        <TextView
+            android:id="@+id/textViewPassword"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:textColor="@color/black"
+            android:text="Пароль" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="5dp">
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/deleteTeacherBt"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@drawable/baseline_delete" />
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/changeTeacherBt"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@drawable/baseline_edit"
+            android:layout_marginStart="40sp"/>
+    </LinearLayout>
+
+
+</LinearLayout>

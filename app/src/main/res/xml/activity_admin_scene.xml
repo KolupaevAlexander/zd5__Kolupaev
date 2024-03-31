@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<MotionScene xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:motion="http://schemas.android.com/apk/res-auto">
+
+    <Transition
+        motion:constraintSetEnd="@+id/end"
+        motion:constraintSetStart="@+id/start"
+        motion:duration="300">
+
+        <OnSwipe
+            motion:touchAnchorId="@+id/motionLayout"
+            motion:touchAnchorSide="right"
+            motion:dragDirection="dragRight"
+            motion:onTouchUp="autoComplete"
+            motion:touchRegionId="@+id/motionLayout" />
+
+    </Transition>
+
+    <ConstraintSet android:id="@+id/start">
+        <!-- Constraints for the start state -->
+    </ConstraintSet>
+
+    <ConstraintSet android:id="@+id/end">
+        <!-- Constraints for the end state -->
+    </ConstraintSet>
+</MotionScene>
